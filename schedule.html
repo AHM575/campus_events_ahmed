@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Check dates, times, and venues for campus events.">
+  <title>Schedule | Campus Events Guide</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <input type="checkbox" id="dark-mode-toggle" class="dark-mode-checkbox">
+
+  <div class="site-wrapper">
+    <header class="site-header">
+      <div class="header-content">
+        <a class="site-logo" href="index.html">Campus Events Guide</a>
+
+        <nav class="main-navigation" aria-label="Main navigation">
+          <a href="index.html">Home</a>
+          <a href="events.html">Events</a>
+          <a href="event-details.html">Event Details</a>
+          <a href="schedule.html" aria-current="page">Schedule</a>
+          <a href="registration.html">Register</a>
+          <label for="dark-mode-toggle" class="dark-mode-label">Dark mode</label>
+        </nav>
+      </div>
+    </header>
+
+    <main>
+      <section class="hero-section">
+        <div class="hero-content">
+          <span class="section-label">Plan your visit</span>
+          <h1>Campus Event Schedule</h1>
+          <p>Dates, times, and venues for the upcoming campus events.</p>
+          <a class="button button-primary" href="events.html">
+            Explore All Events
+          </a>
+        </div>
+      </section>
+
+      <section class="page-section">
+        <div class="section-heading">
+          <span class="section-label">November 2026</span>
+          <h2>Upcoming Event Timetable</h2>
+          <p>All times are local campus times.</p>
+        </div>
+
+        <div class="table-container"
+             role="region"
+             aria-label="Campus event timetable"
+             tabindex="0">
+
+          <table class="schedule-table">
+            <thead>
+              <tr>
+                <th scope="col">Event</th>
+                <th scope="col">Date</th>
+                <th scope="col">Time</th>
+                <th scope="col">Venue</th>
+              </tr>
+            </thead>
+
+            <tbody>
+              <tr>
+                <td>
+                  <a href="event-details.html">
+                    Campus Technology Exhibition
+                  </a>
+                </td>
+                <td>November 5, 2026</td>
+                <td>10:00 AM – 1:00 PM</td>
+                <td>Main Campus Hall</td>
+              </tr>
+
+              <tr>
+                <td>
+                  <a href="events.html#web-workshop">
+                    Web Development Workshop
+                  </a>
+                </td>
+                <td>November 10, 2026</td>
+                <td>12:00 PM – 2:00 PM</td>
+                <td>Computer Lab 2</td>
+              </tr>
+
+              <tr>
+                <td>
+                  <a href="events.html#student-activities-day">
+                    Student Activities Day
+                  </a>
+                </td>
+                <td>November 15, 2026</td>
+                <td>11:00 AM – 3:00 PM</td>
+                <td>University Courtyard</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+
+        <div class="schedule-actions">
+          <a class="button button-primary" href="registration.html">
+            Register for the Featured Event
+          </a>
+          <a class="button button-secondary" href="event-details.html">
+            Read Event Details
+          </a>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="footer-content">
+        <p>&copy; 2026 Campus Events Guide. All rights reserved.</p>
+
+        <div class="social-links" aria-label="Social media links">
+          <a href="https://www.facebook.com/" target="_blank" rel="noopener noreferrer">Facebook</a>
+          <a href="https://www.instagram.com/" target="_blank" rel="noopener noreferrer">Instagram</a>
+          <a href="https://www.linkedin.com/" target="_blank" rel="noopener noreferrer">LinkedIn</a>
+        </div>
+      </div>
+    </footer>
+  </div>
+</body>
+</html>
