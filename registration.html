@@ -1,0 +1,350 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Register your interest in the Campus Technology Exhibition.">
+  <title>Registration | Campus Events Guide</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <input type="checkbox" id="dark-mode-toggle" class="dark-mode-checkbox">
+
+  <div class="site-wrapper">
+    <header class="site-header">
+      <div class="header-content">
+        <a class="site-logo" href="index.html">Campus Events Guide</a>
+
+        <nav class="main-navigation" aria-label="Main navigation">
+          <a href="index.html">Home</a>
+          <a href="events.html">Events</a>
+          <a href="event-details.html">Event Details</a>
+          <a href="schedule.html">Schedule</a>
+          <a href="registration.html" aria-current="page">Register</a>
+          <label for="dark-mode-toggle" class="dark-mode-label">Dark mode</label>
+        </nav>
+      </div>
+    </header>
+
+    <main>
+      <section class="hero-section">
+        <div class="hero-content">
+          <span class="section-label">Join the community</span>
+          <h1>Event Registration</h1>
+          <p>Complete the form to demonstrate how event registration works.</p>
+        </div>
+      </section>
+
+      <section class="page-section featured-summary">
+        <div class="section-heading">
+          <span class="section-label">Featured event</span>
+          <h2>Campus Technology Exhibition</h2>
+        </div>
+
+        <ul class="event-information">
+          <li><strong>Date:</strong> November 5, 2026</li>
+          <li><strong>Time:</strong> 10:00 AM – 1:00 PM</li>
+          <li><strong>Venue:</strong> Main Campus Hall</li>
+          <li><strong>Entry fee:</strong> Free with registration</li>
+        </ul>
+
+        <p class="form-note">
+          This is a demonstration form. The page validates fields in your
+          browser but does not save or send your information.
+        </p>
+      </section>
+
+      <section class="page-section">
+        <div class="section-heading">
+          <span class="section-label">Your information</span>
+          <h2>Registration Form</h2>
+          <p>Fields marked * are required.</p>
+        </div>
+
+        <form class="registration-form" action="#" method="get">
+          <fieldset>
+            <legend>Personal Information</legend>
+
+            <div class="form-group">
+              <label for="full-name">Attendee Name *</label>
+              <input
+                type="text"
+                id="full-name"
+                name="full_name"
+                minlength="3"
+                maxlength="60"
+                pattern="[A-Za-z\u0600-\u06FF\s'\-]{3,60}"
+                title="Use 3 to 60 letters, spaces, apostrophes, or hyphens."
+                autocomplete="name"
+                required
+              >
+            </div>
+
+            <div class="form-group">
+              <label for="email">Email Address *</label>
+              <input
+                type="email"
+                id="email"
+                name="email"
+                maxlength="100"
+                autocomplete="email"
+                required
+              >
+            </div>
+
+            <div class="form-group">
+              <label for="website">Portfolio Website</label>
+              <input
+                type="url"
+                id="website"
+                name="website"
+                maxlength="200"
+                placeholder="https://example.com"
+              >
+            </div>
+
+            <div class="form-group">
+              <label for="phone">Mobile Number *</label>
+              <input
+                type="tel"
+                id="phone"
+                name="phone"
+                pattern="01[0125][0-9]{8}"
+                minlength="11"
+                maxlength="11"
+                inputmode="numeric"
+                placeholder="01012345678"
+                title="Enter 11 digits starting with 010, 011, 012, or 015."
+                autocomplete="tel"
+                required
+              >
+            </div>
+
+            <div class="form-group">
+              <label for="student-code">Student ID *</label>
+              <input
+                type="text"
+                id="student-code"
+                name="student_code"
+                pattern="[0-9]{9}"
+                minlength="9"
+                maxlength="9"
+                inputmode="numeric"
+                placeholder="9 digits"
+                title="Enter exactly 9 digits."
+                required
+              >
+            </div>
+
+            <div class="form-group">
+              <label for="age">Age *</label>
+              <input
+                type="number"
+                id="age"
+                name="age"
+                min="16"
+                max="100"
+                step="1"
+                required
+              >
+            </div>
+          </fieldset>
+
+          <fieldset>
+            <legend>Event Selection</legend>
+
+            <div class="form-group">
+              <label for="event">Choose an Event *</label>
+              <select id="event" name="event" required>
+                <option value="">-- Select an Event --</option>
+                <option value="technology">Campus Technology Exhibition</option>
+                <option value="web">Web Development Workshop</option>
+                <option value="activities">Student Activities Day</option>
+              </select>
+            </div>
+
+            <div class="form-group">
+              <label for="date">Preferred Date *</label>
+              <input
+                type="date"
+                id="date"
+                name="date"
+                min="2026-11-05"
+                max="2026-11-15"
+                required
+              >
+            </div>
+
+            <div class="form-group">
+              <label for="time">Expected Arrival Time</label>
+              <input type="time" id="time" name="time">
+            </div>
+
+            <div class="form-group">
+              <label for="group-size">Number of Attendees *</label>
+              <input
+                type="number"
+                id="group-size"
+                name="group_size"
+                min="1"
+                max="10"
+                value="1"
+                required
+              >
+            </div>
+          </fieldset>
+
+          <fieldset>
+            <legend>Preferences</legend>
+
+            <div class="form-group">
+              <label for="interest">Interest Level (1–10)</label>
+              <input
+                type="range"
+                id="interest"
+                name="interest"
+                min="1"
+                max="10"
+                value="5"
+              >
+              <p class="field-hint">
+                Choose how interested you are in this event.
+              </p>
+            </div>
+
+            <div class="form-group">
+              <label for="color">Favorite Color</label>
+              <input
+                type="color"
+                id="color"
+                name="color"
+                value="#3157d5"
+              >
+            </div>
+
+            <fieldset class="nested-fieldset">
+              <legend>How did you hear about the event? *</legend>
+
+              <label class="choice-label">
+                <input type="radio" name="source" value="social" required>
+                Social Media
+              </label>
+
+              <label class="choice-label">
+                <input type="radio" name="source" value="friends">
+                Friends
+              </label>
+
+              <label class="choice-label">
+                <input type="radio" name="source" value="university">
+                University Announcement
+              </label>
+            </fieldset>
+
+            <fieldset class="nested-fieldset">
+              <legend>Topics of interest</legend>
+
+              <label class="choice-label">
+                <input type="checkbox" name="topics" value="technology">
+                Technology
+              </label>
+
+              <label class="choice-label">
+                <input type="checkbox" name="topics" value="programming">
+                Programming
+              </label>
+
+              <label class="choice-label">
+                <input type="checkbox" name="topics" value="networking">
+                Networking
+              </label>
+            </fieldset>
+          </fieldset>
+
+          <fieldset>
+            <legend>Additional Information</legend>
+
+            <div class="form-group">
+              <label for="student-id">Upload Student ID (optional)</label>
+              <input
+                type="file"
+                id="student-id"
+                name="student_id"
+                accept=".jpg,.jpeg,.png,.pdf"
+              >
+            </div>
+
+            <div class="form-group">
+              <label for="access-needs">Access Needs</label>
+              <textarea
+                id="access-needs"
+                name="access_needs"
+                rows="3"
+                maxlength="300"
+                placeholder="For example: wheelchair access or other support"
+              ></textarea>
+            </div>
+
+            <div class="form-group">
+              <label for="comments">Comments</label>
+              <textarea
+                id="comments"
+                name="comments"
+                rows="4"
+                maxlength="500"
+                placeholder="Any additional information (maximum 500 characters)"
+              ></textarea>
+            </div>
+
+            <label class="choice-label confirmation-label">
+              <input type="checkbox" name="confirm" value="yes" required>
+              I confirm that the information is correct. *
+            </label>
+          </fieldset>
+
+          <div class="form-actions">
+            <button class="button button-primary" type="submit">
+              Submit Registration
+            </button>
+            <button class="button button-secondary" type="reset">
+              Clear Form
+            </button>
+          </div>
+        </form>
+      </section>
+
+      <section class="page-section contact-section">
+        <div class="section-heading">
+          <span class="section-label">Need help?</span>
+          <h2>Event Contact Details</h2>
+        </div>
+
+        <address class="contact-details">
+          <p><strong>Organizer:</strong> Campus Events Office</p>
+          <p>
+            <strong>Email:</strong>
+            <a href="mailto:events@campus.example">events@campus.example</a>
+          </p>
+          <p>
+            <strong>Phone:</strong>
+            <a href="tel:+201000000000">+20 100 000 0000</a>
+          </p>
+          <p><strong>Venue:</strong> Main Campus Hall, 6th of October, Giza</p>
+        </address>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="footer-content">
+        <p>&copy; 2026 Campus Events Guide. All rights reserved.</p>
+
+        <div class="social-links" aria-label="Social media links">
+          <a href="https://www.facebook.com/" target="_blank" rel="noopener noreferrer">Facebook</a>
+          <a href="https://www.instagram.com/" target="_blank" rel="noopener noreferrer">Instagram</a>
+          <a href="https://www.linkedin.com/" target="_blank" rel="noopener noreferrer">LinkedIn</a>
+        </div>
+      </div>
+    </footer>
+  </div>
+</body>
+</html>

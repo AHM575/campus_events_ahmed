@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Details, agenda, media, and review form for the Campus Technology Exhibition.">
+  <title>Event Details | Campus Events Guide</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <input type="checkbox" id="dark-mode-toggle" class="dark-mode-checkbox">
+
+  <div class="site-wrapper">
+    <header class="site-header">
+      <div class="header-content">
+        <a class="site-logo" href="index.html">Campus Events Guide</a>
+
+        <nav class="main-navigation" aria-label="Main navigation">
+          <a href="index.html">Home</a>
+          <a href="events.html">Events</a>
+          <a href="event-details.html" aria-current="page">Event Details</a>
+          <a href="schedule.html">Schedule</a>
+          <a href="registration.html">Register</a>
+          <label for="dark-mode-toggle" class="dark-mode-label">Dark mode</label>
+        </nav>
+      </div>
+    </header>
+
+    <main>
+      <section class="hero-section">
+        <div class="hero-content">
+          <span class="section-label">Featured event</span>
+          <h1>Campus Technology Exhibition</h1>
+          <p>
+            Explore student projects, discover new technologies, and connect
+            with the campus community.
+          </p>
+          <a class="button button-primary" href="registration.html">
+            Register for This Event
+          </a>
+        </div>
+      </section>
+
+      <section class="page-section">
+        <div class="section-heading">
+          <span class="section-label">Event overview</span>
+          <h2>About the Exhibition</h2>
+        </div>
+
+        <div class="event-details-layout">
+          <div class="event-details-image">
+            <img
+              class="event-image"
+              src="assets/tech-exhibition.jpg"
+              alt="Students presenting technology projects at the Campus Technology Exhibition"
+            >
+          </div>
+
+          <div class="event-details-content">
+            <h3>Discover Student Innovation</h3>
+            <p>
+              The Campus Technology Exhibition brings students together to
+              present creative ideas, demonstrate technical projects, and
+              explore modern technologies.
+            </p>
+
+            <h3>What You Can Do</h3>
+            <ul>
+              <li>Explore student technology projects.</li>
+              <li>Meet students from different departments.</li>
+              <li>Learn about new software and technologies.</li>
+              <li>Share ideas and build connections.</li>
+            </ul>
+
+            <ul class="event-information event-facts">
+              <li><strong>Date:</strong> November 5, 2026</li>
+              <li><strong>Time:</strong> 10:00 AM – 1:00 PM</li>
+              <li><strong>Venue:</strong> Main Campus Hall</li>
+              <li><strong>Entry:</strong> Free with registration</li>
+            </ul>
+
+            <a class="button button-primary" href="registration.html">
+              Register for the Exhibition
+            </a>
+          </div>
+        </div>
+      </section>
+
+      <section class="page-section">
+        <div class="section-heading">
+          <span class="section-label">Plan your visit</span>
+          <h2>Event Agenda</h2>
+          <p>What happens on the day, hour by hour.</p>
+        </div>
+
+        <ol class="agenda-list">
+          <li>
+            <span class="agenda-time">10:00 AM</span>
+            <span class="agenda-item">Doors open and check-in</span>
+          </li>
+          <li>
+            <span class="agenda-time">10:20 AM</span>
+            <span class="agenda-item">Opening words from the Dean of Students</span>
+          </li>
+          <li>
+            <span class="agenda-time">10:45 AM</span>
+            <span class="agenda-item">Student project showcase</span>
+          </li>
+          <li>
+            <span class="agenda-time">11:45 AM</span>
+            <span class="agenda-item">Live demonstrations and Q&amp;A</span>
+          </li>
+          <li>
+            <span class="agenda-time">12:30 PM</span>
+            <span class="agenda-item">Awards and closing remarks</span>
+          </li>
+          <li>
+            <span class="agenda-time">12:45 PM</span>
+            <span class="agenda-item">Open networking until 1:00 PM</span>
+          </li>
+        </ol>
+      </section>
+
+      <section class="page-section">
+        <div class="section-heading">
+          <span class="section-label">Media</span>
+          <h2>Event Media</h2>
+        </div>
+
+        <div class="media-container">
+          <h3>Event Introduction Video</h3>
+          <video controls preload="metadata" poster="assets/tech-exhibition.jpg">
+            <source src="assets/event-intro.mp4" type="video/mp4">
+            Your browser does not support video.
+          </video>
+
+          <h3>Event Audio</h3>
+          <audio controls preload="metadata">
+            <source src="assets/event-audio.mp3" type="audio/mpeg">
+            Your browser does not support audio.
+          </audio>
+        </div>
+      </section>
+
+      <section class="page-section">
+        <div class="section-heading">
+          <span class="section-label">Your feedback</span>
+          <h2>Event Review</h2>
+          <p>This demonstration form does not save or send reviews.</p>
+        </div>
+
+        <form class="registration-form review-form" action="#" method="post" enctype="multipart/form-data">
+          <fieldset>
+            <legend>Write a Review</legend>
+
+            <div class="form-group">
+              <label for="reviewer-name">Your Name *</label>
+              <input
+                type="text"
+                id="reviewer-name"
+                name="reviewer_name"
+                minlength="3"
+                maxlength="60"
+                pattern="[A-Za-z\u0600-\u06FF\s'\-]{3,60}"
+                title="Use 3 to 60 letters, spaces, apostrophes, or hyphens."
+                required
+              >
+            </div>
+
+            <div class="form-group">
+              <label for="reviewer-email">Email Address *</label>
+              <input
+                type="email"
+                id="reviewer-email"
+                name="reviewer_email"
+                maxlength="100"
+                required
+              >
+            </div>
+
+            <div class="form-group">
+              <label for="rating">Rating (1–5) *</label>
+              <select id="rating" name="rating" required>
+                <option value="">-- Select a rating --</option>
+                <option value="5">5 - Excellent</option>
+                <option value="4">4 - Good</option>
+                <option value="3">3 - Average</option>
+                <option value="2">2 - Poor</option>
+                <option value="1">1 - Very poor</option>
+              </select>
+            </div>
+
+            <div class="form-group">
+              <label for="review-text">Your Review *</label>
+              <textarea
+                id="review-text"
+                name="review_text"
+                rows="5"
+                minlength="10"
+                maxlength="500"
+                required
+              ></textarea>
+            </div>
+
+            <div class="form-group">
+              <label for="review-photo">Event Photo (optional)</label>
+              <input
+                type="file"
+                id="review-photo"
+                name="review_photo"
+                accept="image/*"
+              >
+            </div>
+          </fieldset>
+
+          <div class="form-actions">
+            <button class="button button-primary" type="submit">Submit Review</button>
+            <button class="button button-secondary" type="reset">Clear Form</button>
+          </div>
+        </form>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="footer-content">
+        <p>&copy; 2026 Campus Events Guide. All rights reserved.</p>
+
+        <div class="social-links" aria-label="Social media links">
+          <a href="https://www.facebook.com/" target="_blank" rel="noopener noreferrer">Facebook</a>
+          <a href="https://www.instagram.com/" target="_blank" rel="noopener noreferrer">Instagram</a>
+          <a href="https://www.linkedin.com/" target="_blank" rel="noopener noreferrer">LinkedIn</a>
+        </div>
+      </div>
+    </footer>
+  </div>
+</body>
+</html>
